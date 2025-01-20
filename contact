@@ -1,2 +1,9 @@
+<nav>
+    <a href="/index.html">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/physical-media/">Physical Media</a>
+    <a href="/contact/">Contact</a> <!-- This is the Contact link -->
+</nav>
 <h1>Contact</h1>
 <p>to say hi, feedback, and etc: josephshipley2004@gmail.com</p>
