@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about/">About Me</a>
+            <a href="/blog/">Blog</a>
+            <a href="/physical-media/">Physical Media</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>About Me</h1>
+        <p>
+            Hello Everybody Welcome To My Website, I Decided To Make A Website Because I Got Tired Of Social Media
+        and AI Content Slop, I Decided To ReMake My Website And Load And Behold, My Website Is REBORN, i Plan 
+        On Updating My Website Hella In The Future, My Website, My Code, I Now Own 100% Of My Website And I
+        Wont Have To Worry About It Being Taken Down, Its Up Forever And I Love It
+        </p>
+        <p>
+            I Absolutely Cannot Wait For The Future Of This Website, It Will Be Better For Me And I Can Update 
+       It Daily, Which Is What I Plan To Do, If You Visited This Site SomeHow, Thank You!.
+        </p>
+        <p>
+           If You Want, Email At <a href="mailto:josephshipley2004@gmail.com">josephshipley2004@gmail.com</a>. 
+       I May Reply , but not instantly so Please Keep That In Mind
+        </p>
+    </main>
+</body>
+</html>
