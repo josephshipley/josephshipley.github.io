@@ -14,7 +14,7 @@
     </nav>
     <h1>Contact Me</h1>
     <form action="mailto:josephshipley2004@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Your Name:</label>
+        <label for="name">Joseph Shipley:</label>
         <br>
         <input type="text" id="name" name="name" required>
         <br><br>
