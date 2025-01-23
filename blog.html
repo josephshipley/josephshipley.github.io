@@ -8,14 +8,13 @@
         body {
             font-family: 'Courier New', Courier, monospace;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: red; /* Makes blog text red */
-            background-color: #f1f1f1; /* Light background color */
+            margin: 20px;
+            background-color: #f1f1f1;
+            color: red;
         }
 
         nav {
-            background-color: #000080; /* Navy blue for a retro feel */
+            background-color: #000080; /* Navy blue */
             color: white;
             padding: 10px 0;
             position: sticky;
@@ -23,7 +22,7 @@
             z-index: 1000;
             text-align: center;
             font-size: 1.5em;
-            border-bottom: 5px solid #ffcc00; /* Yellow border for a 90s pop */
+            border-bottom: 5px solid #ffcc00; /* Yellow border */
         }
 
         nav ul {
@@ -45,36 +44,36 @@
         }
 
         nav ul li a:hover {
-            color: #ffcc00; /* Yellow hover effect */
+            color: #ffcc00;
             text-decoration: underline;
         }
 
-        h1, h2 {
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
         h1 {
+            text-align: center;
             font-size: 2.5em;
-            margin-bottom: 10px;
         }
 
         h2 {
+            text-align: center;
             font-size: 1.5em;
-            margin-top: 20px;
-        }
-
-        img {
-            display: block;
-            margin: 10px auto;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
         }
 
         p {
             text-align: center;
-            font-size: 1.1em;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .image-container img {
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Square shape */
+            border: 2px solid red; /* Optional border for style */
         }
     </style>
 </head>
@@ -91,10 +90,13 @@
     <p>This is where I share my thoughts and updates.</p>
 
     <h2>My Blog</h2>
-    <img src="https://josephshipley.github.io/images/new-blog_-same-yoshi.jpeg" alt="Yoshi invading the blog">
-    <p>The blog is now live!</p>
 
-    <p>Yoshi has invaded my blog!</p>
+    <div class="image-container">
+        <img src="https://josephshipley.github.io/images/new-blog_-same-yoshi.jpeg" alt="Yoshi invading the blog">
+        <img src="https://josephshipley.github.io/images/img_1971.jpeg" alt="Another fun image">
+    </div>
+
+    <p>The blog is now live!</p>
 </body>
 </html>
 
