@@ -1,13 +1,44 @@
-<div>
-    <h2>My Blog</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .blog-post {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Blog</h1>
     <p>The blog is now live!</p>
     
-    <figure style="text-align: center; margin-top: 20px;">
-        <img src="images/blog/new blog same yoshi.jpg" 
-             alt="Yoshi Image" 
-             style="width: 150px; height: 150px; object-fit: cover; border: 1px solid #ccc; border-radius: 8px;">
-        <figcaption style="margin-top: 10px; font-size: 14px; color: #555;">
-            Yoshi, has invaded my blog
-        </figcaption>
-    </figure>
-</div>
+    <div class="blog-post">
+        <!-- Image and Caption -->
+        <img src="images/new_blog_same_yoshi.jpg" alt="Yoshi invading the blog">
+        <p style="text-align: center;">Yoshi has invaded my blog!</p>
+    </div>
+</body>
+</html>
