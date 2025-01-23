@@ -6,10 +6,52 @@
     <title>My Blog</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             color: red; /* Makes blog text red */
+            background-color: #f1f1f1; /* Light background color */
+        }
+
+        nav {
+            background-color: #000080; /* Navy blue for a retro feel */
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            font-size: 1.5em;
+            border-bottom: 5px solid #ffcc00; /* Yellow border for a 90s pop */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Yellow hover effect */
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         h1 {
@@ -24,24 +66,35 @@
 
         img {
             display: block;
-            margin: 20px auto;
-            max-width: 80%; /* Makes image smaller */
-            height: auto;
+            margin: 10px auto;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
 
         p {
             text-align: center;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/physical-media">Physical Media</a></li>
+        </ul>
+    </nav>
+
     <h1>Welcome to My Blog</h1>
     <p>This is where I share my thoughts and updates.</p>
 
     <h2>My Blog</h2>
+    <img src="https://josephshipley.github.io/images/new-blog_-same-yoshi.jpeg" alt="Yoshi invading the blog">
     <p>The blog is now live!</p>
 
-    <img src="https://josephshipley.github.io/images/new-blog_-same-yoshi.jpeg" alt="Yoshi invading the blog">
     <p>Yoshi has invaded my blog!</p>
 </body>
 </html>
+
