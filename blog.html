@@ -7,41 +7,36 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 20px;
+            line-height: 1.6;
         }
-
         h1 {
-            font-size: 2.5em;
+            font-size: 2rem;
             margin-bottom: 10px;
         }
-
-        h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
+        p {
+            font-size: 1rem;
         }
-
         img {
             display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
+            margin: 10px auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
-
-        p {
-            text-align: center;
+        .blog-post {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Blog</h1>
-    <p>This is where I share my thoughts and updates.</p>
-
-    
-
-    <img src="images/new-blog_-same-yoshi.jpeg" alt="Yoshi invading the blog">
-    
+    <div class="blog-post">
+        <!-- Image and Caption -->
+        <img src="images/new_blog_same_yoshi.jpg" width= 150 height= 150 alt="Yoshi invading the blog">
+        <p style="text-align: center;">Yoshi has invaded my blog!</p>
+    </div>
 </body>
 </html>
-
 
