@@ -9,20 +9,31 @@
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            background-color: #f1f1f1; /* Light background color */
-            color: red; /* Makes text red */
+            background: linear-gradient(135deg, #ff007f, #00e7ff, #ffd700);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+            color: #ffcc00; /* Bright yellow text for contrast */
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         nav {
-            background-color: #000080; /* Navy blue for a retro feel */
+            background: linear-gradient(45deg, #ff007f, #4b0082, #00e7ff);
             color: white;
-            padding: 10px 0;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
             text-align: center;
-            font-size: 1.5em;
-            border-bottom: 5px solid #ffcc00; /* Yellow border for a 90s pop */
+            font-size: 1.8em;
+            border-bottom: 8px solid #ffd700; /* Gold bottom border */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         nav ul {
@@ -33,39 +44,48 @@
         }
 
         nav ul li {
-            margin: 0 20px;
+            margin: 0 25px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.4em;
             font-weight: bold;
+            text-shadow: 2px 2px 5px #ff007f;
         }
 
         nav ul li a:hover {
-            color: #ffcc00; /* Yellow hover effect */
-            text-decoration: underline;
+            color: #ffd700;
+            text-shadow: 2px 2px 8px #00e7ff;
         }
 
         h1, h2 {
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 5px #4b0082;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 10px;
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 2em;
             margin-top: 20px;
         }
 
         p {
             text-align: center;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        p, h2 {
+            color: #ffffff;
         }
     </style>
 </head>
@@ -106,4 +126,4 @@ i plan on theming this site too so it doesn't look as plain as it does, and i wi
         the navigation bar too lol
     </p>
 </body>
-             
+</html>
