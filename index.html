@@ -6,159 +6,101 @@
     <title>Joseph Shipley's Website</title>
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
+            background-color: red;
+            color: white; /* White text for contrast */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ff007f, #00e7ff, #ffd700);
-            background-size: 400% 400%;
-            animation: gradientBG 8s ease infinite;
-            color: #ffcc00; /* Bright yellow text for contrast */
+            text-align: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
+        /* Navigation bar style */
         nav {
-            background: linear-gradient(45deg, #ff007f, #4b0082, #00e7ff);
-            color: white;
-            padding: 15px 0;
             position: sticky;
             top: 0;
-            z-index: 1000;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
             text-align: center;
-            font-size: 1.8em;
-            border-bottom: 8px solid #ffd700; /* Gold bottom border */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: inline-flex;
-        }
-
-        nav ul li {
-            margin: 0 25px;
-        }
-
-        nav ul li a {
+        nav a {
             color: white;
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 1.4em;
             font-weight: bold;
-            text-shadow: 2px 2px 5px #ff007f;
         }
 
-        nav ul li a:hover {
-            color: #ffd700;
-            text-shadow: 2px 2px 8px #00e7ff;
+        nav a:hover {
+            text-decoration: underline;
         }
 
-        h1, h2 {
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-            text-shadow: 2px 2px 5px #4b0082;
+        /* Page content section styling */
+        section {
+            padding: 20px;
+            margin: 40px 0;
+            border-bottom: 2px solid white;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         p {
-            text-align: center;
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 20px auto;
-            line-height: 1.6;
+            font-size: 1.2rem;
         }
 
-        p, h2 {
-            color: #ffffff;
+        /* Scroll effect */
+        section {
+            min-height: 100vh;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/physical-media">Physical Media</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#physical-media">Physical Media</a>
+        <a href="#blog">Blog</a>
+        <a href="#random-page">The Random Page</a>
     </nav>
 
-    <h1>Welcome to Joseph Shipley's Website</h1>
-    <p>Explore the site using the navigation bar above!</p>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Joseph Shipley's Website</h1>
+        <p>Hello, my name is Joseph. I am 21, and I am an aspiring cartoonist and scriptwriter. I live my life like it's the 1980s, no social media and whatnot. 
+        I only use social media to text friends, but other than that, I’m just chillin'. What I would love to do one day is make a full cartoon. 
+        My other hope is to scriptwrite for cartoon companies with my red typewriter. Oh yeah, I also love to collect physical media. 
+        I’m learning music at the moment and I want to learn coding, but for now, I’ve copied some basic code and made it my own. 
+        But don’t worry, I plan to decorate this website to my full capacity and just have fun with it. 
+        So yeah, just having fun. My favorite shows are Pound Puppies, Spongebob, Garfield, TMNT, and Powerpuff Girls. 
+        I mostly watch 80s-90s cartoons hehe. But enough about me, I’m sure you are used to it by now. Welcome aboard!
+also this time i am going to stay as consistent as possible, cleaned up the previous website and made this one
+sorry for the delay, but im back into action again <3
+and my email is dvdcatcher4@gmail.com</p>
+    </section>
 
-    <h2>Hello, I'm Joseph</h2>
-    <p>
-        My Name Is Joseph And I Love A-Lot Of Shit, Physical Media, Music, You Name It, I Got Tired Of AI Slop on the Internet And Social Media In General So I Decided To Make My Own Website And Have Fun With It
-        , I Will Be Uploading EveryDay, Hopefully My Life Interests You, Or Not Who Knows What Will Happen, For Feedback Or you wanna just say hi, my email is: josephshipley2004@gmail.com, i do reply but not instantly So Keep That In Mind
-    </p>
+    <!-- Physical Media Section -->
+    <section id="physical-media">
+        <h1>Physical Media Collection</h1>
+        <p>This is where I will share my love for physical media, including VHS, 8-tracks, cassettes, and more!</p>
+    </section>
 
-    <h2>What Made Me Start A Website?</h2>
-    <p>
-       I Always Wanted Something To My Name, And My Own Personal Corner On The Internet, I Said, Why Not Right?, So I Decided To Make My Own I Love It So Far, 
-       I Wanna try Updating This Website Every Month Or So With Something New, Maybe A Flash Game, Music, Who Knows?, Also I Stopped Using Website Builders, 
-       I Would Rather Take The Time To Code And Learn It, Plus They Are Too Expensive
-    </p>
+    <!-- Blog Section -->
+    <section id="blog">
+        <h1>My Blog</h1>
+        <p>Coming soon! This section will feature my thoughts on different topics, updates on my projects, and more.</p>
+    </section>
 
-    <h2>The Update Corner</h2>
-    <p>
-        Updates: 1/22/25: MY BLOG IS NOW LIVE!!!!!!!, I CANT WAIT TO UPDATE THIS EVERY DAY OR SO, obviously i may not do it everyday BUT STILL, 
-Also physical media page is NOW LIVE, expect some shit on there soon, 
-i plan on theming this site too so it doesn't look as plain as it does, and i will add a logo for it too
-
-    
-        1/23/25: i really love this new style, i may keep it :)        
-        1/25/25: the physical media section will be edited soon, may go crazy with
-        the navigation bar too lol
-        
-        
-        Update 2 1/25/25: ight im done messing with it for now XD
-        BEST EXPERIENCED ON THE COMPUTER, PHONE VERSION IS CLUNKY
-        2/10/25: HEY ALL IM BACK, SORRY FOR BEING GONE FOR SO LONG
-        I SOMETIMES FORGET I CAN UPDATE ON MY PHONE LOLOL, Anyways
-        new blogs soon,this website will be hella updated : D
-        
-        
-        2/25/25: hey all, i been lacking so much but this website
-        will be getting really updated soon, i cannot wait for 
-        the future of this website, oh yeah theres gonna be two
-        new sections added next month or two, stay tuned for that
-        with love, joseph 
-
-        5.10.25 OH MY GOD I AM SO SORRY I HAVE NOT BEEN ON THIS WEBSITE RECENTLY
-        I PLAN ON COMKNG BACK AND RE DOING THE FUCKOF THIS THING, SORRY GUYS XD
-        IM COMKNG BACK STRONGER THAN EVER LOVE YOU GUYS
-    </p>
+    <!-- Random Page Section -->
+    <section id="random-page">
+        <h1>The Random Page</h1>
+        <p>Welcome to the random page! This space is reserved for whatever random thoughts, projects, or experiments I feel like sharing.</p>
+    </section>
 </body>
 </html>
-
-   <h2>FACTS ABOUT ME</h2>
-        <p>since you guys dont know
-        about me or much at all i wanna go 
-        in depth about myself
-        1: i love physical media, its always 
-        nice collecting stuff i love
-        2: My Favorite Tv Shows Are: 
-        PowerPuff Girls, TMNT, Teen Titans
-        Regular Show, Hilda
-        3: i was born on 04/10/2004
-        4: i love nintendo and sega
-        5: i love sanrio cartoons
-        and thats pretty much it, nothing
-        else to put here honestly</p>
-
-        
