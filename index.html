@@ -1,174 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Shipley's Website</title>
-    <style>
-        /* General body styling */
-        body {
-            background-color: red;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            height: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Shipley's Website</title>
+  <style>
+    /* General body styling */
+    body {
+      background-color: red;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
 
-        /* Navigation bar style */
-        nav {
-            position: sticky;
-            top: 0;
-            width: 100%;
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
+    /* Navigation bar style */
+    nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        /* Page content section styling */
-        section {
-            padding: 20px;
-            margin: 40px 0;
-            border-bottom: 2px solid white;
-        }
+    /* Page content section styling */
+    section {
+      padding: 20px;
+      margin: 40px 0;
+      border-bottom: 2px solid white;
+    }
 
-        h1 {
-            margin-top: 40px;
-        }
+    h1 {
+      margin-top: 40px;
+    }
 
-        p {
-            font-size: 1.2rem;
-        }
+    p {
+      font-size: 1.2rem;
+    }
 
-        /* Ensures sections take up full height on smaller screens */
-        section {
-            min-height: 100vh;
-        }
+    /* Ensures sections take up full height on smaller screens */
+    section {
+      min-height: 100vh;
+    }
 
-        /* Desktop version: defaults */
-        @media (min-width: 768px) {
-            body {
-                justify-content: center;
-                align-items: center;
-            }
+    /* Desktop version: defaults */
+    @media (min-width: 768px) {
+      body {
+        justify-content: center;
+        align-items: center;
+      }
 
-            nav {
-                padding: 20px;
-            }
+      nav {
+        padding: 20px;
+      }
 
-            section {
-                max-width: 1000px;
-                margin: 40px auto;
-                padding: 40px;
-            }
+      section {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+      }
 
-            h1 {
-                font-size: 2.5rem;
-            }
+      h1 {
+        font-size: 2.5rem;
+      }
 
-            p {
-                font-size: 1.5rem;
-            }
-        }
+      p {
+        font-size: 1.5rem;
+      }
+    }
 
-        /* Mobile version: Adjustments for smaller devices */
-        @media (max-width: 767px) {
-            nav {
-                padding: 15px;
-                font-size: 14px;
-            }
+    /* Mobile version: Adjustments for smaller devices */
+    @media (max-width: 767px) {
+      nav {
+        padding: 15px;
+        font-size: 14px;
+      }
 
-            nav a {
-                margin: 0 10px;
-            }
+      nav a {
+        margin: 0 10px;
+      }
 
-            h1 {
-                font-size: 2rem;
-            }
+      h1 {
+        font-size: 2rem;
+      }
 
-            p {
-                font-size: 1.2rem;
-                padding: 0 15px;
-            }
+      p {
+        font-size: 1.2rem;
+        padding: 0 15px;
+      }
 
-            section {
-                padding: 20px;
-                margin: 20px;
-            }
-        }
+      section {
+        padding: 20px;
+        margin: 20px;
+      }
+    }
 
-        /* Image resizing */
-        img {
-            width: 150px; /* Adjust this value for your preferred size */
-            height: auto;
-            margin-top: 20px;
-            border-radius: 8px; /* Optional: rounded corners for style */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
-        }
-    </style>
+    /* Image resizing */
+    img {
+      width: 150px; /* Adjust this value for your preferred size */
+      height: auto;
+      margin-top: 20px;
+      border-radius: 8px; /* Optional: rounded corners for style */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+    }
+
+    /* Media category section */
+    .media-category {
+      margin-bottom: 40px;
+    }
+
+    .media-category h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+  </style>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#physical-media">Physical Media</a>
-        <a href="#blog">Blog</a>
-        <a href="#random-page">The Random Page</a>
-    </nav>
+  <!-- Navigation bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#physical-media">Physical Media</a>
+    <a href="#blog">Blog</a>
+    <a href="#random-page">The Random Page</a>
+  </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Joseph Shipley's Website</h1>
-        <p>Hello, my name is Joseph. I am 21, and I am an aspiring cartoonist and scriptwriter. I live my life like it's the 1980s/Early 2000s, no social media and whatnot. 
-        I only use social media to text friends, but other than that, I’m just chillin'. What I would love to do one day is make a full cartoon. 
-        My other hope is to scriptwrite for cartoon companies with my red typewriter. Oh yeah, I also love to collect physical media. 
-        I’m learning music at the moment and I want to learn coding, but for now, I’ve copied some basic code and made it my own. 
-        But don’t worry, I plan to decorate this website to my full capacity and just have fun with it. 
-        So yeah, just having fun. My favorite shows are Pound Puppies, Spongebob, Garfield, TMNT, Sanrio and Powerpuff Girls. 
-        I mostly watch 80s-90s cartoons hehe. But enough about me, I’m sure you are used to it by now. Welcome aboard! For Contact: DVDCATCHER4@GMAIL.COM</p>
-    </section>
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Joseph Shipley's Website</h1>
+    <p>Hello, my name is Joseph. I am 21, and I am an aspiring cartoonist and scriptwriter. I live my life like it's the 1980s/Early 2000s, no social media and whatnot. 
+    I only use social media to text friends, but other than that, I’m just chillin'. What I would love to do one day is make a full cartoon. 
+    My other hope is to scriptwrite for cartoon companies with my red typewriter. Oh yeah, I also love to collect physical media. 
+    I’m learning music at the moment and I want to learn coding, but for now, I’ve copied some basic code and made it my own. 
+    But don’t worry, I plan to decorate this website to my full capacity and just have fun with it. 
+    So yeah, just having fun. My favorite shows are Pound Puppies, Spongebob, Garfield, TMNT, Sanrio and Powerpuff Girls. 
+    I mostly watch 80s-90s cartoons hehe. But enough about me, I’m sure you are used to it by now. Welcome aboard! For Contact: DVDCATCHER4@GMAIL.COM</p>
+  </section>
 
-    <!-- Physical Media Section -->
-    <section id="physical-media">
-        <h1>Physical Media Collection</h1>
-        <p>This is where I will share my love for physical media, including VHS, 8-tracks, cassettes, and more!</p>
-        <!-- Image of the Hello Kitty VHS Tapes -->
-        <img src="NewFolder/IMG_9146.jpeg" alt="Hello Kitty Vhs Tapes">
-        <!-- Image Of Garfield VHS Tape -->
-        <img src="NewFolder/Garfield_vhs.JPG" alt="Garfield VHS Tape"
-        <!-- Image Of Nature Cassette Tapes -->
-        <img src="NewFolder/IMG_9153.jpeg" alt ="Nature Cassette Tapes"
-        <!-- Image Of War VHS Tapes -->
-        <img src="NewFolder/IMG_9163.JPEG" alt = "War Tapes"
+  <!-- Physical Media Section -->
+  <section id="physical-media">
+    <h1>Physical Media Collection</h1>
+    <p>This is where I will share my love for physical media, including VHS, 8-tracks, cassettes, and more!</p>
 
-    </section>
+    <!-- VHS Tapes Section -->
+    <div class="media-category">
+      <h2>VHS Tapes</h2>
+      <img src="NewFolder/IMG_9146.jpeg" alt="Hello Kitty VHS Tapes">
+      <img src="NewFolder/IMG_9163.JPEG" alt="War VHS Tapes">
+    </div>
 
-    <!-- Blog Section -->
-    <section id="blog">
-        <h1>My Blog</h1>
-        <p>Coming soon! This section will feature my thoughts on different topics, updates on my projects, and more also plan on getting a digital camera.</p>
-    </section>
+    <!-- 8-Track Section -->
+    <div class="media-category">
+      <h2>8-Tracks</h2>
+      <img src="NewFolder/IMG_9152.jpeg" alt="8-Track Tape">
+    </div>
 
-    <!-- Random Page Section -->
-    <section id="random-page">
-        <h1>The Random Page</h1>
-        <p>Welcome to the random page! This space is reserved for whatever random thoughts, projects, or experiments I feel like sharing.</p>
-    </section>
+    <!-- Cassette Section -->
+    <div class="media-category">
+      <h2>Cassettes</h2>
+      <img src="NewFolder/IMG_9153.jpeg" alt="Nature Cassette Tapes">
+    </div>
+
+    <!-- Games Section -->
+    <div class="media-category">
+      <h2>Games</h2>
+      <p>Coming soon!</p>
+    </div>
+
+    <!-- CD Section -->
+    <div class="media-category">
+      <h2>CDs</h2>
+      <p>Coming soon!</p>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h1>My Blog</h1>
+    <p>Coming soon! This section will feature my thoughts on different topics, updates on my projects, and more also plan on getting a digital camera.</p>
+  </section>
+
+  <!-- Random Page Section -->
+  <section id="random-page">
+    <h1>The Random Page</h1>
+    <p>Welcome to the random page! This space is reserved for whatever random thoughts, projects, or experiments I feel like sharing.</p>
+  </section>
 </body>
 </html>
