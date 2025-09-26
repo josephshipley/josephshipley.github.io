@@ -123,31 +123,27 @@
       margin-bottom: 20px;
     }
 
-    /* Flex container for images */
+    /* Grid layout for images: 5 per row */
     .media-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
       gap: 15px;
+      justify-items: center;
     }
 
     .media-gallery img {
       width: 100%;
-      max-width: 200px;
+      max-width: 150px;
       height: auto;
       object-fit: cover;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    /* Responsive adjustments */
+    /* Responsive adjustments for smaller screens */
     @media (max-width: 768px) {
       .media-gallery {
-        justify-content: flex-start;
-      }
-
-      .media-gallery img {
-        max-width: 150px;
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -227,17 +223,14 @@
 
       <h3>Cartoon DVDs</h3>
       <div class="media-gallery">
-        <!-- Drop cartoon DVD images here -->
       </div>
 
       <h3>Movie DVDs</h3>
       <div class="media-gallery">
-        <!-- Drop movie DVD images here -->
       </div>
 
       <h3>Misc DVDs</h3>
       <div class="media-gallery">
-        <!-- Drop misc DVD images here -->
       </div>
     </div>
   </section>
