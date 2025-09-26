@@ -113,15 +113,6 @@
       }
     }
 
-    /* Image resizing */
-    img {
-      width: 150px;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
     /* Media category section */
     .media-category {
       margin-bottom: 40px;
@@ -132,17 +123,32 @@
       margin-bottom: 20px;
     }
 
-    /* Flex container for images to wrap */
-    .media-category div.images-container {
+    /* Flex container for images */
+    .media-gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
     }
 
-    .media-category div.images-container img {
-      width: 150px;
+    .media-gallery img {
+      width: 100%;
+      max-width: 200px;
       height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .media-gallery {
+        justify-content: flex-start;
+      }
+
+      .media-gallery img {
+        max-width: 150px;
+      }
     }
 
   </style>
@@ -171,24 +177,24 @@
   <!-- Physical Media Section -->
   <section id="physical-media">
     <h1>Physical Media Collection</h1>
-    <p>This is where I will share my love for physical media, including VHS, 8-tracks, cassettes, and more!</p>
+    <p>This is where I share my love for physical media, including VHS, DVDs, 8-tracks, cassettes, and more!</p>
 
     <!-- VHS Tapes Section -->
     <div class="media-category">
       <h2>VHS Tapes</h2>
-      <div class="images-container">
+      <div class="media-gallery">
         <img src="NewFolder/IMG_9146.jpeg" alt="Hello Kitty VHS Tapes">
         <img src="NewFolder/IMG_9163.jpeg" alt="War VHS Tapes">
-        <img src="NewFolder/Garfield_vhs.JPG" alt="Garfield Vhs Tapes">
-        <img src="NewFolder/TmntVhs.JPG" alt="Tmnt Vhs Tapes">
-        <img src="NewFolder/whoframed.JPG" alt="whoframed">
+        <img src="NewFolder/Garfield_vhs.JPG" alt="Garfield VHS Tapes">
+        <img src="NewFolder/TmntVhs.JPG" alt="TMNT VHS Tapes">
+        <img src="NewFolder/whoframed.JPG" alt="Who Framed Roger Rabbit VHS">
       </div>
     </div>
 
     <!-- 8-Track Section -->
     <div class="media-category">
       <h2>8-Tracks</h2>
-      <div class="images-container">
+      <div class="media-gallery">
         <img src="NewFolder/IMG_9152.jpeg" alt="8-Track Tape">
       </div>
     </div>
@@ -196,7 +202,7 @@
     <!-- Cassettes Section -->
     <div class="media-category">
       <h2>Cassettes</h2>
-      <div class="images-container">
+      <div class="media-gallery">
         <img src="NewFolder/IMG_9153.jpeg" alt="Nature Cassette Tapes">
         <img src="NewFolder/cassettes.JPG" alt="Misc Cassettes">
       </div>
@@ -218,20 +224,20 @@
     <div class="media-category">
       <h2>DVDs</h2>
       <p>Here’s where I’ll showcase my DVD collection. Organized by category:</p>
-      
+
       <h3>Cartoon DVDs</h3>
-      <div class="images-container">
-  
+      <div class="media-gallery">
+        <!-- Drop cartoon DVD images here -->
       </div>
 
       <h3>Movie DVDs</h3>
-      <div class="images-container">
-        
+      <div class="media-gallery">
+        <!-- Drop movie DVD images here -->
       </div>
 
       <h3>Misc DVDs</h3>
-      <div class="images-container">
-        
+      <div class="media-gallery">
+        <!-- Drop misc DVD images here -->
       </div>
     </div>
   </section>
